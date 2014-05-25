@@ -25,5 +25,10 @@ namespace ShopAssist
         {
             listOfItems.Remove(item);
         }
+
+        public List<Item> getItemList()
+        {
+            return listOfItems;
+        }
     }
 }
