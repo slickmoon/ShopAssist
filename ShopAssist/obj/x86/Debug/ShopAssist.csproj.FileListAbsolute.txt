@@ -1,0 +1,10 @@
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\bin\Debug\ShopAssist.exe
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\bin\Debug\ShopAssist.pdb
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csprojResolveAssemblyReference.cache
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.MainForm.resources
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.Properties.Resources.resources
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csproj.GenerateResource.Cache
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.exe
+C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.pdb
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.exe
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.pdb
