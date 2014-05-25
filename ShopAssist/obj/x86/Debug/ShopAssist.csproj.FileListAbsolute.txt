@@ -8,3 +8,9 @@ C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.exe
 C:\Users\jake\Desktop\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.pdb
 D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.exe
 D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.pdb
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csprojResolveAssemblyReference.cache
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.MainForm.resources
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.Properties.Resources.resources
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csproj.GenerateResource.Cache
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.exe
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.pdb

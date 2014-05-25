@@ -7,13 +7,13 @@ namespace ShopAssist
 {
     class itemList
     {
-        private List<Item> itemList = new List<Item>();
+        private List<Item> listOfItems = new List<Item>();
 
         public void addItem(Item item)
         {
-            if (!itemList.Contains(item))
+            if (!listOfItems.Contains(item))
             {
-                itemList.Add(item);
+                listOfItems.Add(item);
             }
             else
             {
@@ -23,7 +23,7 @@ namespace ShopAssist
 
         public void removeItem(Item item)
         {
-            itemList.Remove(item);
+            listOfItems.Remove(item);
         }
     }
 }
