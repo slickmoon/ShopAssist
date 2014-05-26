@@ -9,7 +9,7 @@ namespace ShopAssist
     {
         private string orderID;
         private string orderDate;
-        private itemList listOfItems;
+        private itemList listOfItems = new itemList();
 
         private Item getItem(int idx)
         {
@@ -29,11 +29,10 @@ namespace ShopAssist
 
                 else
                 {
-                    price = price + (i.getPrice * i.getQty);
+                    price = price + (i.getPrice * i.getQty);      
                 }
-            
+                          
             }
-
             return price;
         }
 

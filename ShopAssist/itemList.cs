@@ -9,7 +9,7 @@ namespace ShopAssist
     {
         private List<Item> listOfItems = new List<Item>();
 
-        private void addItem(Item item)
+        public void addItem(Item item)
         {
             if (!listOfItems.Contains(item))
             {
@@ -21,7 +21,7 @@ namespace ShopAssist
             }
         }
 
-        private void removeItem(Item item)
+        public void removeItem(Item item)
         {
             listOfItems.Remove(item);
         }

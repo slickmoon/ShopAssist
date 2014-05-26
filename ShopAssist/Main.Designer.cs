@@ -51,11 +51,13 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.AccessibleName = "";
             this.txtSearch.Location = new System.Drawing.Point(37, 112);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(268, 20);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.Text = "Enter search terms";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnSearch
             // 
@@ -65,6 +67,7 @@
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnOrder
             // 
