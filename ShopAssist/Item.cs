@@ -27,7 +27,7 @@ namespace ShopAssist
             get{ return price; }
         }
 
-        public int getQty()
+        public int getQty
         {
             get{ return qty; }
         }

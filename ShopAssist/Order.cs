@@ -22,14 +22,14 @@ namespace ShopAssist
 
             foreach (Item i in listOfItems.getItemList)
             {
-                if (i.getQty() == 1)
+                if (i.getQty == 1)
                 {
                     price = price + i.getPrice;
                 }
 
                 else
                 {
-                    price = price + (i.getPrice * i.getQty());
+                    price = price + (i.getPrice * i.getQty);
                 }
             
             }
