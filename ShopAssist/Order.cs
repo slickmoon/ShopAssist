@@ -5,32 +5,31 @@ using System.Text;
 
 namespace ShopAssist
 {
-    class Order
+    class order: itemList
     {
         private string orderID;
         private string orderDate;
         private itemList listOfItems;
 
-        public void getItem()
+        private Item getItem(int idx)
         {
-
-
+            return listOfItems.getItemList[idx];
         }
 
         public int getTotalPrice()
         {
             int price = 0;
 
-            foreach (Item i in listOfItems.getItemList())
+            foreach (Item i in listOfItems.getItemList)
             {
                 if (i.getQty() == 1)
                 {
-                    price = price + i.getPrice();
+                    price = price + i.getPrice;
                 }
 
                 else
                 {
-                    price = price + (i.getPrice() * i.getQty());
+                    price = price + (i.getPrice * i.getQty());
                 }
             
             }
@@ -38,9 +37,9 @@ namespace ShopAssist
             return price;
         }
 
-        public string getDate()
+        public string getDate
         {
-            return orderDate;
+            get{ return orderDate; }
         }
     }
 }

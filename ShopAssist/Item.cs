@@ -12,23 +12,24 @@ namespace ShopAssist
         private int qty;
         private int price;
 
-        public Item()
+        private Item()
         {
-
+            qty = 0;
+            price = 0;
         }
         public void changeQuantity(int qtyDelta)
         {
             qty = qty + qtyDelta;
         }
 
-        public int getPrice()
+        public int getPrice
         {
-            return price;
+            get{ return price; }
         }
 
         public int getQty()
         {
-            return qty;
+            get{ return qty; }
         }
     }
 }

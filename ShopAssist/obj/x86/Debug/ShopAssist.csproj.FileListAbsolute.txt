@@ -14,3 +14,5 @@ D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.Pr
 D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csproj.GenerateResource.Cache
 D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.exe
 D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.pdb
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.exe
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.pdb
