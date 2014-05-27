@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ShopAssist
 {
-    class Item
+    public class Item
     {
         private String itemID;
         private String name;

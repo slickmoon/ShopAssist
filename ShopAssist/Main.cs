@@ -12,7 +12,9 @@ namespace ShopAssist
     public partial class MainForm : Form
     {
 
-        private order shopOrder = new order();       
+        private order shopOrder;
+        private SearchResult resultPage;
+        private OrderPage orderSelect;
         
 
         public MainForm()
@@ -64,19 +66,21 @@ namespace ShopAssist
                         break;
                     }         
                 }
-       
             }
+            resultPage = new SearchResult(temp, this.txtSearch.Text);
+            resultPage.Show();
             MessageBox.Show(match.ToString());
-        }
-
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            orderSelect = new OrderPage();
+            orderSelect.Show();
         }
     }
 }

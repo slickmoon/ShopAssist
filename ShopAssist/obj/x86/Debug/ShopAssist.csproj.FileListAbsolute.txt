@@ -16,3 +16,11 @@ D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.exe
 D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.pdb
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.exe
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.pdb
+D:\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.exe
+D:\GitHub\ShopAssist\ShopAssist\bin\Debug\ShopAssist.pdb
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csprojResolveAssemblyReference.cache
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.MainForm.resources
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.Properties.Resources.resources
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.SearchResult.resources
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csproj.GenerateResource.Cache
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.OrderPage.resources

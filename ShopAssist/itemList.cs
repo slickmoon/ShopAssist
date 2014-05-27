@@ -5,9 +5,13 @@ using System.Text;
 
 namespace ShopAssist
 {
-    class itemList
+    public class itemList
     {
         private List<Item> listOfItems = new List<Item>();
+
+        public itemList()
+        {
+        }
 
         public void addItem(Item item)
         {
@@ -29,6 +33,7 @@ namespace ShopAssist
         public List<Item> getItemList
         {
             get { return listOfItems; }
+            set { listOfItems = value; }
         }
     }
 }

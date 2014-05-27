@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtOutput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblHeading = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtOutputPrice = new System.Windows.Forms.TextBox();
             this.lblPrice = new System.Windows.Forms.Label();
             this.btnSortPrice = new System.Windows.Forms.Button();
             this.btnSortStore = new System.Windows.Forms.Button();
@@ -41,13 +41,14 @@
             this.btnViewSelected = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtOutput
             // 
-            this.textBox1.Location = new System.Drawing.Point(21, 116);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(346, 312);
-            this.textBox1.TabIndex = 0;
+            this.txtOutput.Location = new System.Drawing.Point(21, 116);
+            this.txtOutput.Multiline = true;
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.Size = new System.Drawing.Size(346, 312);
+            this.txtOutput.TabIndex = 0;
+            this.txtOutput.Text = "No Results Found";
             // 
             // label1
             // 
@@ -75,17 +76,17 @@
             this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeading.Location = new System.Drawing.Point(18, 18);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(338, 29);
+            this.lblHeading.Size = new System.Drawing.Size(330, 29);
             this.lblHeading.TabIndex = 3;
-            this.lblHeading.Text = "Search Results for \"undefined\"";
+            this.lblHeading.Text = "Search Results for \'undefined\'";
             // 
-            // textBox2
+            // txtOutputPrice
             // 
-            this.textBox2.Location = new System.Drawing.Point(388, 116);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(69, 312);
-            this.textBox2.TabIndex = 4;
+            this.txtOutputPrice.Location = new System.Drawing.Point(388, 116);
+            this.txtOutputPrice.Multiline = true;
+            this.txtOutputPrice.Name = "txtOutputPrice";
+            this.txtOutputPrice.Size = new System.Drawing.Size(69, 312);
+            this.txtOutputPrice.TabIndex = 4;
             // 
             // lblPrice
             // 
@@ -133,6 +134,7 @@
             this.btnReturn.TabIndex = 9;
             this.btnReturn.Text = "Return Home";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnViewSelected
             // 
@@ -142,6 +144,7 @@
             this.btnViewSelected.TabIndex = 10;
             this.btnViewSelected.Text = "View Selected";
             this.btnViewSelected.UseVisualStyleBackColor = true;
+            this.btnViewSelected.Click += new System.EventHandler(this.btnViewSelected_Click);
             // 
             // SearchResult
             // 
@@ -154,11 +157,11 @@
             this.Controls.Add(this.btnSortStore);
             this.Controls.Add(this.btnSortPrice);
             this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtOutputPrice);
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtOutput);
             this.Name = "SearchResult";
             this.Text = "ShopAssist - Search Results";
             this.Load += new System.EventHandler(this.SearchResult_Load);
@@ -169,11 +172,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblHeading;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtOutputPrice;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Button btnSortPrice;
         private System.Windows.Forms.Button btnSortStore;

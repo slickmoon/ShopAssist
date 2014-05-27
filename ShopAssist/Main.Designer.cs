@@ -57,7 +57,6 @@
             this.txtSearch.Size = new System.Drawing.Size(268, 20);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.Text = "Enter search terms";
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnSearch
             // 
@@ -77,6 +76,7 @@
             this.btnOrder.TabIndex = 3;
             this.btnOrder.Text = "View Order";
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnWatch
             // 
