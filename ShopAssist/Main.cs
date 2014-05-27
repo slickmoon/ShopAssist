@@ -44,20 +44,37 @@ namespace ShopAssist
         {
             bool match = false;
             itemList temp = new itemList();
-
+            //looping through every item in the list
             foreach (Item i in shopOrder.getItemList)
             {
-                if (i.getName.ToUpper() == this.txtSearch.Text.ToUpper())
+                //splitting the name into an array based on the whitespace
+                //EG: "Apple Juice" becomes "APPLE", "JUICE" for testing
+                string itemname = i.getName.ToUpper();
+                string[] testarray = itemname.Split(' ');
+
+                //looping through the array testing each string to see if it matches the search terms
+                for (int j = 0; j <= testarray.Length; j++)
                 {
-                    match = true;
-                    temp.addItem(i);              
-                }                
+                    if (i.getName.ToUpper() == this.txtSearch.Text.ToUpper())
+                    {
+                        //when a match is found, add the current item to the temporary list for search output
+                        match = true;
+                        temp.addItem(i);
+                        //breaking out of match loop so that a found item does not get matched more than once
+                        break;
+                    }         
+                }
+       
             }
-            MessageBox.Show(match.ToString());      
-           
+            MessageBox.Show(match.ToString());
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
         {
 
         }

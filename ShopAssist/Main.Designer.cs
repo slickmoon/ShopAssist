@@ -131,6 +131,7 @@
             this.Controls.Add(this.lblWelcome);
             this.Name = "MainForm";
             this.Text = "ShopAssist";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
