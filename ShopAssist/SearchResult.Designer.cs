@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtOutput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblHeading = new System.Windows.Forms.Label();
@@ -39,16 +38,8 @@
             this.lblSort = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnViewSelected = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // txtOutput
-            // 
-            this.txtOutput.Location = new System.Drawing.Point(21, 116);
-            this.txtOutput.Multiline = true;
-            this.txtOutput.Name = "txtOutput";
-            this.txtOutput.Size = new System.Drawing.Size(346, 312);
-            this.txtOutput.TabIndex = 0;
-            this.txtOutput.Text = "No Results Found";
             // 
             // label1
             // 
@@ -146,11 +137,21 @@
             this.btnViewSelected.UseVisualStyleBackColor = true;
             this.btnViewSelected.Click += new System.EventHandler(this.btnViewSelected_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(21, 116);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(346, 303);
+            this.listBox1.TabIndex = 11;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // SearchResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 538);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnViewSelected);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.lblSort);
@@ -161,7 +162,6 @@
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtOutput);
             this.Name = "SearchResult";
             this.Text = "ShopAssist - Search Results";
             this.Load += new System.EventHandler(this.SearchResult_Load);
@@ -172,7 +172,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblHeading;
@@ -183,5 +182,6 @@
         private System.Windows.Forms.Label lblSort;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnViewSelected;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

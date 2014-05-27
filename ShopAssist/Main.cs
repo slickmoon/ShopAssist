@@ -26,7 +26,7 @@ namespace ShopAssist
             Item a = new Item("Apple Elephant", "001", 23);
             Item b = new Item("Banana", "001", 23);
             Item c = new Item("cake", "001", 23);
-            Item d = new Item("Doily", "001", 23);
+            Item d = new Item("Apple", "001", 23);
             Item e = new Item("Elephant", "001", 23);
             Item f = new Item("Grapes", "001", 23);
 

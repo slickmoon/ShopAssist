@@ -24,3 +24,5 @@ D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.Properties.Resources.re
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.SearchResult.resources
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.csproj.GenerateResource.Cache
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.OrderPage.resources
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.OrderPage.resources
+D:\Users\Jake\Documents\GitHub\ShopAssist\ShopAssist\obj\x86\Debug\ShopAssist.SearchResult.resources

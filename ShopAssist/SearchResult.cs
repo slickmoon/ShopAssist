@@ -29,18 +29,22 @@ namespace ShopAssist
 
         private void LoadBoxes(string header)
         {
+            List<string> temp = new List<string>();
+            
             //adding search terms to heading
             lblHeading.Text = ("Search Results for '" + header + "'");
             //if the list is not empty
             if (searchResults.getItemList.Count() != 0)
             {
                 //Clear the undefined information and print item names and prices
-                txtOutput.Clear();
+                listBox1.ClearSelected();
+
                 foreach (Item i in searchResults.getItemList)
                 {
-                    txtOutput.Text += (i.getName +'\n');
-                    txtOutputPrice.Text += (i.getPrice + '\n');
+                    temp.Add(i.getName);
                 }
+
+                listBox1.DataSource = temp;
             }
         }
 
@@ -54,6 +58,16 @@ namespace ShopAssist
             //Code for viewing selected item
             //Text box needs to be altered to make items selectable
             //Perhaps a listbox rather than a textbox
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOutput_TextChanged(object sender, EventArgs e)
+        {
+
         }
         
         //Accessor for search result list
