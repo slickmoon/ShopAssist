@@ -89,6 +89,7 @@
             this.btnSortPrice.TabIndex = 6;
             this.btnSortPrice.Text = "Price";
             this.btnSortPrice.UseVisualStyleBackColor = true;
+            this.btnSortPrice.Click += new System.EventHandler(this.btnSortPrice_Click);
             // 
             // btnSortStore
             // 

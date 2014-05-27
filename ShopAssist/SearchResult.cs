@@ -34,6 +34,7 @@ namespace ShopAssist
             
             //adding search terms to heading
             lblHeading.Text = ("Search Results for '" + header + "'");
+            
             //if the list is not empty
             if (searchResults.getItemList.Count() != 0)
             {
@@ -69,6 +70,11 @@ namespace ShopAssist
         }
 
         private void txtOutput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSortPrice_Click(object sender, EventArgs e)
         {
 
         }

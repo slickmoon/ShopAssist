@@ -37,14 +37,10 @@ namespace ShopAssist
             shopOrder.addItem(e);
             shopOrder.addItem(f);
 
-            MessageBox.Show(shopOrder.getItemList.Count().ToString() + " items added.");
-            MessageBox.Show("Total price: $" + shopOrder.getTotalPrice());
-
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            bool match = false;
             itemList temp = new itemList();
             //looping through every item in the list
             foreach (Item i in shopOrder.getItemList)
@@ -59,9 +55,8 @@ namespace ShopAssist
                 {
                     if (testarray[j] == this.txtSearch.Text.ToUpper())
                     {
-
                         //when a match is found, add the current item to the temporary list for search output
-                        match = true;
+                       
                         temp.addItem(i);
                         //breaking out of match loop so that a found item does not get matched more than once
                         break;
@@ -70,7 +65,7 @@ namespace ShopAssist
             }
             resultPage = new SearchResult(temp, this.txtSearch.Text);
             resultPage.Show();
-            MessageBox.Show(match.ToString());
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
