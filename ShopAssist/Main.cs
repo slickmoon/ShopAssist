@@ -43,15 +43,14 @@ namespace ShopAssist
         private void btnSearch_Click(object sender, EventArgs e)
         {
             bool match = false;
+            itemList temp = new itemList();
 
             foreach (Item i in shopOrder.getItemList)
             {
                 if (i.getName.ToUpper() == this.txtSearch.Text.ToUpper())
                 {
                     match = true;
-                    //ADD THE CODE FOR A MATCH
-
-                    break;                 
+                    temp.addItem(i);              
                 }                
             }
             MessageBox.Show(match.ToString());      
