@@ -30,6 +30,7 @@ namespace ShopAssist
         private void LoadBoxes(string header)
         {
             List<string> temp = new List<string>();
+            List<string> intTemp = new List<string>();
             
             //adding search terms to heading
             lblHeading.Text = ("Search Results for '" + header + "'");
@@ -42,9 +43,11 @@ namespace ShopAssist
                 foreach (Item i in searchResults.getItemList)
                 {
                     temp.Add(i.getName);
+                    intTemp.Add(i.getPrice.ToString());
                 }
 
                 listBox1.DataSource = temp;
+                listBox2.DataSource = intTemp;
             }
         }
 

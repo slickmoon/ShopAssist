@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblHeading = new System.Windows.Forms.Label();
-            this.txtOutputPrice = new System.Windows.Forms.TextBox();
             this.lblPrice = new System.Windows.Forms.Label();
             this.btnSortPrice = new System.Windows.Forms.Button();
             this.btnSortStore = new System.Windows.Forms.Button();
@@ -39,6 +38,7 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnViewSelected = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -70,14 +70,6 @@
             this.lblHeading.Size = new System.Drawing.Size(330, 29);
             this.lblHeading.TabIndex = 3;
             this.lblHeading.Text = "Search Results for \'undefined\'";
-            // 
-            // txtOutputPrice
-            // 
-            this.txtOutputPrice.Location = new System.Drawing.Point(388, 116);
-            this.txtOutputPrice.Multiline = true;
-            this.txtOutputPrice.Name = "txtOutputPrice";
-            this.txtOutputPrice.Size = new System.Drawing.Size(69, 312);
-            this.txtOutputPrice.TabIndex = 4;
             // 
             // lblPrice
             // 
@@ -146,11 +138,20 @@
             this.listBox1.TabIndex = 11;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(391, 116);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(98, 303);
+            this.listBox2.TabIndex = 12;
+            // 
             // SearchResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 538);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnViewSelected);
             this.Controls.Add(this.btnReturn);
@@ -158,7 +159,6 @@
             this.Controls.Add(this.btnSortStore);
             this.Controls.Add(this.btnSortPrice);
             this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.txtOutputPrice);
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -175,7 +175,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblHeading;
-        private System.Windows.Forms.TextBox txtOutputPrice;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Button btnSortPrice;
         private System.Windows.Forms.Button btnSortStore;
@@ -183,5 +182,6 @@
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnViewSelected;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
