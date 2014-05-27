@@ -23,7 +23,7 @@ namespace ShopAssist
             shopOrder = new order();  
 
             //random items for testing.
-            Item a = new Item("Apple", "001", 23);
+            Item a = new Item("Apple Elephant", "001", 23);
             Item b = new Item("Banana", "001", 23);
             Item c = new Item("cake", "001", 23);
             Item d = new Item("Doily", "001", 23);
@@ -52,13 +52,14 @@ namespace ShopAssist
                 //splitting the name into an array based on the whitespace
                 //EG: "Apple Juice" becomes "APPLE", "JUICE" for testing
                 string itemname = i.getName.ToUpper();
-                string[] testarray = itemname.Split(' ');
+                string[] testarray = itemname.Split(null);
 
                 //looping through the array testing each string to see if it matches the search terms
-                for (int j = 0; j <= testarray.Length; j++)
+                for (int j = 0; j <= testarray.Length - 1; j++)
                 {
-                    if (i.getName.ToUpper() == this.txtSearch.Text.ToUpper())
+                    if (testarray[j] == this.txtSearch.Text.ToUpper())
                     {
+
                         //when a match is found, add the current item to the temporary list for search output
                         match = true;
                         temp.addItem(i);
