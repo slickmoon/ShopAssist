@@ -43,6 +43,13 @@ namespace ShopAssist
             shopOrder.addItem(d);
             shopOrder.addItem(e);
             shopOrder.addItem(f);
+            shopOrder.addItem(g);
+            shopOrder.addItem(h);
+            shopOrder.addItem(i);
+            shopOrder.addItem(j);
+            shopOrder.addItem(k);
+            shopOrder.addItem(l);
+            shopOrder.addItem(m);
 
         }
 
