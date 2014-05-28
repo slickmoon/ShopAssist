@@ -24,11 +24,18 @@ namespace ShopAssist
 
             //random items for testing.
             Item a = new Item("Apple Elephant", "001", 23);
-            Item b = new Item("Banana", "001", 23);
-            Item c = new Item("cake", "001", 23);
-            Item d = new Item("Apple", "001", 23);
-            Item e = new Item("Elephant", "001", 23);
-            Item f = new Item("Grapes", "001", 23);
+            Item b = new Item("Banana", "002", 24);
+            Item c = new Item("cake", "003", 58);
+            Item d = new Item("Apple", "004", 13);
+            Item e = new Item("Elephant", "005", 30);
+            Item f = new Item("Grapes", "006", 16);
+            Item g = new Item("Lollies", "007", 4);
+            Item h = new Item("Chocolate", "008", 3);
+            Item i = new Item("12kg Black Tar Heroin", "009", 3000);
+            Item j = new Item("Shampoo", "010", 70);
+            Item k = new Item("Conditioner", "011", 27);
+            Item l = new Item("Laptop", "012", 1236);
+            Item m = new Item("TV", "013", 9999);
 
             shopOrder.addItem(a);
             shopOrder.addItem(b);

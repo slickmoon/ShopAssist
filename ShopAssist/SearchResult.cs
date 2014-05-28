@@ -39,6 +39,7 @@ namespace ShopAssist
             if (searchResults.getItemList.Count() != 0)
             {
                 //Clear the undefined information and print item names and prices
+				//ADD DEFAULT VALUE
                 listBox1.ClearSelected();
 
                 foreach (Item i in searchResults.getItemList)
