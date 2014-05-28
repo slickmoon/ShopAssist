@@ -1,0 +1,9 @@
+D:\GitHub\ShopAssist\ShopAssist\bin\Release\ShopAssist.exe
+D:\GitHub\ShopAssist\ShopAssist\bin\Release\ShopAssist.pdb
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.MainForm.resources
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.OrderPage.resources
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.Properties.Resources.resources
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.SearchResult.resources
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.csproj.GenerateResource.Cache
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.exe
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.pdb

@@ -34,23 +34,23 @@ namespace ShopAssist
             
             //adding search terms to heading
             lblHeading.Text = ("Search Results for '" + header + "'");
-            
             //if the list is not empty
             if (searchResults.getItemList.Count() != 0)
             {
                 //Clear the undefined information and print item names and prices
-				//ADD DEFAULT VALUE
-                listBox1.ClearSelected();
-
+                lstResults.ClearSelected();
                 foreach (Item i in searchResults.getItemList)
                 {
                     temp.Add(i.getName);
                     intTemp.Add(i.getPrice);
                 }
-
-                listBox1.DataSource = temp;
-                listBox2.DataSource = intTemp;
+                lstPrice.DataSource = intTemp;
             }
+            else
+            {
+                temp.Add("No items found");
+            }
+            lstResults.DataSource = temp;
         }
 
         private void btnReturn_Click(object sender, EventArgs e)

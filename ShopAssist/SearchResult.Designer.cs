@@ -37,8 +37,8 @@
             this.lblSort = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnViewSelected = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lstResults = new System.Windows.Forms.ListBox();
+            this.lstPrice = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -130,30 +130,30 @@
             this.btnViewSelected.UseVisualStyleBackColor = true;
             this.btnViewSelected.Click += new System.EventHandler(this.btnViewSelected_Click);
             // 
-            // listBox1
+            // lstResults
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(21, 116);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(346, 303);
-            this.listBox1.TabIndex = 11;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lstResults.FormattingEnabled = true;
+            this.lstResults.Location = new System.Drawing.Point(21, 116);
+            this.lstResults.Name = "lstResults";
+            this.lstResults.Size = new System.Drawing.Size(346, 303);
+            this.lstResults.TabIndex = 11;
+            this.lstResults.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox2
+            // lstPrice
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(391, 116);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(98, 303);
-            this.listBox2.TabIndex = 12;
+            this.lstPrice.FormattingEnabled = true;
+            this.lstPrice.Location = new System.Drawing.Point(391, 116);
+            this.lstPrice.Name = "lstPrice";
+            this.lstPrice.Size = new System.Drawing.Size(98, 303);
+            this.lstPrice.TabIndex = 12;
             // 
             // SearchResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 538);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstPrice);
+            this.Controls.Add(this.lstResults);
             this.Controls.Add(this.btnViewSelected);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.lblSort);
@@ -182,7 +182,7 @@
         private System.Windows.Forms.Label lblSort;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnViewSelected;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lstResults;
+        private System.Windows.Forms.ListBox lstPrice;
     }
 }
