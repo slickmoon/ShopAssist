@@ -89,7 +89,6 @@
             // 
             // txtDesc
             // 
-            this.txtDesc.Enabled = false;
             this.txtDesc.Location = new System.Drawing.Point(37, 184);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.ReadOnly = true;

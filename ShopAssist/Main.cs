@@ -55,26 +55,37 @@ namespace ShopAssist
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            int flag = 0;
             itemList temp = new itemList();
+            string[] searcharray = this.txtSearch.Text.ToUpper().Split(null);
             //looping through every item in the list
             foreach (Item i in shopOrder.getItemList)
             {
+                flag = 0;
                 //splitting the name into an array based on the whitespace
                 //EG: "Apple Juice" becomes "APPLE", "JUICE" for testing
                 string itemname = i.getName.ToUpper();
                 string[] testarray = itemname.Split(null);
-
-                //looping through the array testing each string to see if it matches the search terms
-                for (int j = 0; j <= testarray.Length - 1; j++)
+                //testing each term in the item name
+                foreach (string testname in testarray)
                 {
-                    if (testarray[j] == this.txtSearch.Text.ToUpper())
+                    //testing each term in search query
+                    foreach (string search in searcharray)
                     {
-                        //when a match is found, add the current item to the temporary list for search output
-                       
-                        temp.addItem(i);
-                        //breaking out of match loop so that a found item does not get matched more than once
+                        if (testname == search)
+                        {
+                            //when a match is found, add the current item to the temporary list for search output
+                            temp.addItem(i);
+                            //flag is used to break out of the matching loop so that we move to the next item once a match has been found
+                            flag = 1;
+                            break;
+                        }
+                    }
+                    //flag is used to move onto the next item in the list
+                    if (flag == 1)
+                    {
                         break;
-                    }         
+                    }
                 }
             }
             resultPage = new SearchResult(temp, this.txtSearch.Text);
