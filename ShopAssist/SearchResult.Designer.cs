@@ -163,6 +163,8 @@
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(533, 577);
+            this.MinimumSize = new System.Drawing.Size(533, 577);
             this.Name = "SearchResult";
             this.Text = "ShopAssist - Search Results";
             this.Load += new System.EventHandler(this.SearchResult_Load);

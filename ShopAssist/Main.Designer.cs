@@ -129,6 +129,8 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblWelcome);
+            this.MaximumSize = new System.Drawing.Size(363, 384);
+            this.MinimumSize = new System.Drawing.Size(363, 384);
             this.Name = "MainForm";
             this.Text = "ShopAssist";
             this.Load += new System.EventHandler(this.MainForm_Load);

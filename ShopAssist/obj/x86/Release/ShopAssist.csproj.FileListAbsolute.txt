@@ -7,3 +7,4 @@ D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.SearchResult.resource
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.csproj.GenerateResource.Cache
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.exe
 D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.pdb
+D:\GitHub\ShopAssist\ShopAssist\obj\x86\Release\ShopAssist.csprojResolveAssemblyReference.cache
